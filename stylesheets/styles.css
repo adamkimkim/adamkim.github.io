@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Lora', serif;
+  font-family: 'Bad Script', cursive;
   font-weight: 400;
   font-style: normal;
   /*
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-  font-family: 'Lora', serif;
+  font-family: 'Bad Script', cursive;
   font-weight: 700;
   font-style: normal;
   /*
@@ -31,7 +31,7 @@
 }
 
 @font-face {
-  font-family: 'Lora', serif;
+  font-family: 'Bad Script', cursive;
   font-weight: 400;
   font-style: italic;
   /*
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-  font-family: 'Lora', serif;
+  font-family: 'Bad Script', cursive;
   font-weight: 700;
   font-style: italic;
   /*
@@ -65,7 +65,7 @@
 body {
   background-color: #fff;
   padding:50px;
-  font: 14px/1.5 'Lora', serif;
+  font: 14px/1.5 'Bad Script', cursive;
   color:#727272;
   font-weight:400;
 }
