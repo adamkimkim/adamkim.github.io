@@ -10,8 +10,8 @@ title-bold: Adam Kim
 title-normal: 
 email: adamhkim54@gmail.com
 description: keepitinside | spent penny
-baseurl: "/portfolio" # the subpath of your site, e.g. /blog
-url: "https://admkim.gitlab.io" # the base hostname & protocol for your site
+baseurl: /portfolio # the subpath of your site, e.g. /blog
+url: https://admkim.gitlab.io # the base hostname & protocol for your site
 author: 
 #street_address: 1234 Somewhere Road
 #city: Nashville
