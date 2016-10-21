@@ -118,3 +118,73 @@
   .popover-link:hover,
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #33C3F0; }
+
+
+    /* ---------------- menu icon -------------- */
+    /* hide list item that contains the link that should 
+       open and close navBar on small screens */ 
+    ul.navbar-list li.icon
+    {
+        display:none;
+    }
+
+    /* media queries */
+
+    /* 
+    when screen < 680 px, hid all list items, except for Home
+    show list item that contains the link to open and close navBar 
+    */
+    @media screen and (max-width:680px)
+    {
+        ul.navbar-list li:not(:first-child)
+        {
+            display:none;
+        }
+        ul.navbar-list li.icon
+        {
+            float:right;
+            display:inline-block;
+        }
+    }
+
+
+    /*
+    the responsive class is added to navbar with javascript when user clicks on
+    icon. 
+    */
+    @media screen and (max-width:680px)
+    {
+        ul.navbar-list.responsive
+        {
+            position:relative;
+        }
+        ul.navbar-list.responsive li.icon
+        {
+            float:none;
+            display:inline;
+        }
+        ul.navbar-list.responsive li a
+        {
+            display:block;
+            text-align:left;
+        }
+    }
+
+    /* javascript */
+
+    /*
+    toggle btwn adding and removing the responsive class to navbar when user
+    clicks on icon
+    */
+    function menuFunction()
+    {
+        var x = document.getElementById("navbar-list");
+        if (x.className === "navbar-list")
+        {
+            x.className += " responsive";
+        }
+        else
+        {
+            x.className = "navbar-list";
+        }
+    }
