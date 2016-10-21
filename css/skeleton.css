@@ -1,4 +1,5 @@
 /*
+*
 * Skeleton V2.0.4
 * Copyright 2014, Dave Gamache
 * www.getskeleton.com
@@ -8,7 +9,8 @@
 */
 
 
-/* Table of contents
+/* 
+Table of contents
 ––––––––––––––––––––––––––––––––––––––––––––––––––
 - Grid
 - Base Styles
@@ -26,7 +28,8 @@
 */
 
 
-/* Grid
+/* 
+Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .container {
   position: relative;
