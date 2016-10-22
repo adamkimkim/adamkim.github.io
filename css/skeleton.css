@@ -134,11 +134,10 @@ body {
   color: #222; }
 
 
-.header-bg
+#header-bg
 {
     background-size:cover;
-    /*position:fixed;
-    z-index:-1;*/
+    background-position:center 15%;
 }
 
 /* Typography
