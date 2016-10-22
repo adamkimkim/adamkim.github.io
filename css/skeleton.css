@@ -135,7 +135,7 @@ body {
 
 #header-bg
 {
-    background-image:url(../images/sad_keir.jpg);
+    background:url(../images/sad_keir.jpg);
     background-size:cover;
     position:fixed;
     z-index:-1;
