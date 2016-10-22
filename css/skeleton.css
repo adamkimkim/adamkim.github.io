@@ -137,7 +137,7 @@ body {
 {
     background-image:url(../images/sad_keir.jpg);
     background-size:cover;
-    position:fixed;
+    /*position:fixed;*/
     z-index:-1;/*div tag stays behind*/
 }
 
