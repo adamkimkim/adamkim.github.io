@@ -143,6 +143,7 @@ body {
 {
     background:url(../images/adam_hat.jpg);
     padding-top:95%;
+    z-index:-1;
 }
 
 
