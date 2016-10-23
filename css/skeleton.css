@@ -144,7 +144,7 @@ body {
     background:url(../images/adam_hat.jpg);
     padding-top:95%;
     background-repeat:no-repeat;
-    /*z-index:-1;*/
+    z-index:-1;
 }
 
 
