@@ -137,8 +137,14 @@ body {
 #header-bg
 {
     background:url(../images/sad_keir.png);
-    padding-top:95%
+    padding-top:95%;
 }
+#about-bg
+{
+    background:url(../images/adam_hat.jpg);
+    /*padding-top:95%;*/
+}
+
 
 /* Typography
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
