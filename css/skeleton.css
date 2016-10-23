@@ -142,7 +142,8 @@ body {
 #about-bg
 {
     background:url(../images/adam_hat.jpg);
-    padding-top:95%;
+    padding-top:10%;
+    background-repeat:no-repeat;
     z-index:-1;
 }
 
