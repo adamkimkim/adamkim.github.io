@@ -9,7 +9,8 @@
   }
 
 /* Larger than tablet */
-@media (min-width: 650px) {
+@media (max-width: 650px) {
+/*@media (min-width: 650px) {*/
   /* Navbar */
   .navbar + .docs-section {
     border-top-width: 0; }
@@ -26,10 +27,13 @@
     display: none; }
   .navbar > .container {
     width: 100%; }
-  .navbar-list {
+  .navbar-list { /* ul */
     list-style: none;
-    margin-bottom: 0; }
-  .navbar-item {
+    margin-bottom: 0;
+    
+    overflow:hidden;
+    }
+  .navbar-item { /* li */
     position: relative;
     float: left;
     margin-bottom: 0; }
@@ -41,7 +45,10 @@
     margin-right: 35px;
     text-decoration: none;
     line-height: 6.5rem;
-    color: #222; }
+    color: #222;
+    
+    transition:0.3s;
+    }
   .navbar-link.active {
     color: #33C3F0; }
   .has-docked-nav .navbar {
@@ -53,6 +60,13 @@
   /* Re-overiding the width 100% declaration to match size of % based container */
   .has-docked-nav .navbar > .container {
     width: 80%; }
+
+
+ul.navbar-list li.icon
+{
+	float:right;
+	display:inline-block;
+}
 
 
 
@@ -125,75 +139,45 @@
     border-bottom-color: #33C3F0; }
 
 
+/* responsive */
+ul.navbar-list li a:hover {background-color: #555;}
 
- 
-    /* ---------------- menu icon -------------- */
-    /* 
-	hide list item that contains the link that should 
-       open and close navBar on small screens 
-    ul.navbar-list li.icon
-    {
-        display:none;
+ul.navbar-list li.icon {display: none;}
+
+@media screen and (max-width:680px) {
+  ul.navbar-list li:not(:first-child) {display: none;}
+  ul.navbar-list li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+
+@media screen and (max-width:680px) {
+  ul.navbar-list.responsive {position: relative;}
+  ul.navbar-list.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.navbar-list.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.navbar-list.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
+
+
+/* javascript */
+function menuFunction() {
+    var x = document.getElementById("theNavbar");
+    if (x.className === "navbar-list") {
+        x.className += " responsive";
+    } else {
+        x.className = "navbar-list";
     }
-	*/ 
-
-    /* media queries */
-
-    /* 
-    when screen < 650 px, hide all list items, except for Home
-    show list item that contains the link to open and close navBar 
-    @media screen and (max-width:650px)
-    {
-        ul.navbar-list li:not(:first-child)
-        {
-            display:none;
-        }
-        ul.navbar-list li.icon
-        {
-            float:right;
-            display:inline-block;
-        }
-    }
-    */
-
-
-    /*
-    the responsive class is added to navbar with javascript when user clicks on
-    icon. 
-    @media screen and (max-width:650px)
-    {
-        ul.navbar-list.responsive
-        {
-            position:relative;
-        }
-        ul.navbar-list.responsive li.icon
-        {
-            float:none;
-            display:inline;
-        }
-        ul.navbar-list.responsive li a
-        {
-            display:block;
-            text-align:left;
-        }
-    }
-
-    */
-    /* ------- javascript -------- */
-
-    /*
-    toggle btwn adding and removing the responsive class to navbar when user
-    clicks on icon
-    function menuFunction()
-    {
-        var x = document.getElementById("navbar-list");
-        if (x.className === "navbar-list")
-        {
-            x.className += " responsive";
-        }
-        else
-        {
-            x.className = "navbar-list";
-        }
-    }
-    */
+}
