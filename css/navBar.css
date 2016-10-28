@@ -9,7 +9,7 @@
   }
 
 /* Larger than tablet */
-@media (min-width: 360px) {
+@media (min-width: 300px) {
   /* Navbar */
   .navbar {
     border-top-width: 0; }
