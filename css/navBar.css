@@ -9,8 +9,7 @@
   }
 
 /* Larger than tablet */
-@media (max-width: 650px) {
-/*@media (min-width: 650px) {*/
+@media (min-width: 650px) {
   /* Navbar */
   .navbar + .docs-section {
     border-top-width: 0; }
