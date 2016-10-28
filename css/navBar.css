@@ -9,9 +9,9 @@
   }
 
 /* Larger than tablet */
-@media (min-width: 400px) {
+@media (min-width: 360px) {
   /* Navbar */
-  .navbar + .docs-section {
+  .navbar {
     border-top-width: 0; }
   .navbar,
   .navbar-spacer {
