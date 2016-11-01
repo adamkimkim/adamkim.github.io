@@ -1,17 +1,13 @@
 /* By Skeleton */
 
-.container {
-  max-width: 960px; }
-
 .navbar {
   display: none;
-  opacity:0.95;
-  }
+  opacity:0.95; }
 
 /* Larger than tablet */
-@media (min-width: 300px) {
+@media (min-width: 650px) {
   /* Navbar */
-  .navbar {
+  .navbar + .docs-section {
     border-top-width: 0; }
   .navbar,
   .navbar-spacer {
@@ -26,13 +22,10 @@
     display: none; }
   .navbar > .container {
     width: 100%; }
-  .navbar-list { /* ul */
+  .navbar-list {
     list-style: none;
-    margin-bottom: 0;
-    
-    overflow:hidden;
-    }
-  .navbar-item { /* li */
+    margin-bottom: 0; }
+  .navbar-item {
     position: relative;
     float: left;
     margin-bottom: 0; }
@@ -44,10 +37,7 @@
     margin-right: 35px;
     text-decoration: none;
     line-height: 6.5rem;
-    color: #222;
-    
-    transition:0.3s;
-    }
+    color: #222; }
   .navbar-link.active {
     color: #33C3F0; }
   .has-docked-nav .navbar {
@@ -61,15 +51,7 @@
     width: 80%; }
 
 
-ul.navbar-list li.icon
-{
-	float:right;
-	display:inline-block;
-}
-
-
-
-  /* Popover */
+/* Popover */
   .popover.open {
     display: block;
   }
@@ -136,47 +118,3 @@ ul.navbar-list li.icon
   .popover-link:hover,
   .popover-item:first-child .popover-link:hover:after {
     border-bottom-color: #33C3F0; }
-
-
-/* responsive */
-ul.navbar-link a:hover {background-color: #555;}
-
-ul.navbar-list li.icon {display: none;}
-
-@media screen and (max-width:680px) {
-  ul.navbar-list li:not(:first-child) {display: none;}
-  ul.navbar-list li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-
-@media screen and (max-width:680px) {
-  ul.navbar-list.responsive {position: relative;}
-  ul.navbar-list.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.navbar-list.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.navbar-link.responsive {
-    display: block;
-    text-align: left;
-  }
-}
-
-
-
-/* javascript */
-function menuFunction() {
-    var x = document.getElementById("theNavbar");
-    if (x.className === "navbar-list") {
-        x.className += " responsive";
-    } else {
-        x.className = "navbar-list";
-    }
-}

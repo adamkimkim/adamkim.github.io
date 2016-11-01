@@ -42,20 +42,31 @@
 </head>
 <body>
 
+
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	  
+   	<div class="row">
+		  <div class="eleven column" id='header'>
+			<h1 style="margin:0; margin-top:60%;"></h1>
+   		  </div>
+  		</div>
+
+    <script type="text/javascript">
+        bgImg = document.getElementById('header').style;
+        bgImg.backgroundImage="url(images/sad_keir.png)"; // specify the image path here
+        bgImg.backgroundSize="cover";
+    </script>
+
+
 	<div class="container">
 		<div class="row">
 		  <div class="eleven column">
-			<h1 style="margin:0;margin-top:10%;">Adam Kim</h1>
-			  
-   			</div>
+			<h1 style="margin:0;margin-top:3%;">Adam Kim</h1>
+   		  </div>
   		</div>
 
- <!--------------------------------------------------------------  NAV BAR -->
+   <!--------------------------------------------------------------  NAV BAR -->
 <div class="navbar-spacer"></div>
-  <div class="wrapper">
     <nav class="navbar">
       <div class="container">
         <ul class="navbar-list" id="theNavbar">
@@ -77,25 +88,15 @@
           </li> <!-- endof music popover -->
 
           <li class="navbar-item"><a class="navbar-link" href="#shows" data-scroll>Shows</a></li>
-          
 		  <li class="navbar-item"><a class="navbar-link" href="#photos" data-scroll>Photos</a></li>
-		  
           <li class="navbar-item"><a class="navbar-link" href="#about" data-scroll>About</a></li>
-          
 		  <li class="navbar-item"><a class="navbar-link" href="#contact" data-scroll>Contact</a></li> 
-        
-        
-
-
-
-        <!------------------ menu icon -->
-<li class="icon"><a href="javascript:void(0);" style="font-size:35px;" onclick="menuFunction()">&#9776;</a></li>
-        <!-- endof menu icon -->
-
+          <!------------------ menu icon 
+          <li class="icon"><a href="javascript:void(0);" style="font-size:35px;" onclick="menuFunction()">&#9776;</a></li>
+            -->
 	    </ul>
       </div>
     </nav>
-    </div> <!-- endof navbar wrapper-->
 
 
     <!--------------------------------------------------- ABOUT -->
