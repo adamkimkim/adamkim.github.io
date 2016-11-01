@@ -64,8 +64,10 @@
 			<h1 style="margin:0;margin-top:3%;">Adam Kim</h1>
    		  </div>
   		</div>
+        </div>
 
    <!--------------------------------------------------------------  NAV BAR -->
+  	<div class="container">
 <div class="navbar-spacer"></div>
     <nav class="navbar">
       <div class="container">
@@ -97,10 +99,16 @@
 	    </ul>
       </div>
     </nav>
+    </div>
 
 
     <!--------------------------------------------------- ABOUT -->
-    <div class="wrapper" section id="about" style="margin-top:30px;">
+
+
+    <div class="row">
+		  <div class="eleven column" id='about-bg'>
+	<div class="container">
+    <div class="wrapper" section id="about" style="margin-top:30px;color:#fff;">
     <h1>About</h1>
     <p>Adam Kim is a music producer based in San Diego. He plays the guitar, vocals.</p>
     
@@ -114,16 +122,29 @@
     Alexander Pelletier - Drums.</br>
     </p>
     </div>
+    </div>
+   		  </div>
+  		</div>
+
+    <script type="text/javascript">
+        aboutBg = document.getElementById('about-bg').style;
+        aboutBg.backgroundImage="url(images/adam_hat.jpg)"; // specify the image path here
+        aboutBg.backgroundSize="cover";
+        aboutBg.backgroundPosition="center";
+    </script>
+
+
 
     <!--------------------------------------------------- CONTACT -->
+	<div class="container">
     <div class="wrapper" section id="contact" style="margin-top:30px;">
         <h1>Contact</h1>
         <p>Email: <a href="mailto:adamhkim54@gmail.com">adamhkim54@gmail.com</a></p>
     </div>
+    </div>
 
 
-  </div><!-- endof container -->
-<!-- End Document
+  <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
