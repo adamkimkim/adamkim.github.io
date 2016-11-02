@@ -27,6 +27,8 @@
   <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <link rel="stylesheet" href="css/ie.css">
@@ -40,7 +42,9 @@
 </head>
 <body>
 
-   <!--------------------------------------------------------------  HEADER -->
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
    	<div class="row">
 		  <div class="eleven column" id='header'>
 			<h1 style="margin-top:65%;"></h1>
@@ -54,13 +58,13 @@
     </script>
 
 
-   <!-----------------------------------------------------------    NAV BAR -->
+   <!--------------------------------------------------------------  NAV BAR -->
+    
     <nav class="navbar"> 
-      <div class="container" style="position:relative;float:left;width:100%;left:10%;bottom:-1%;">
-        <ul class="navbar-list">
-          <li class="navbar-item"><h1 style="padding-right:40px;text-transform:uppercase;color:#fff;letter-spacing:10px;">Adam Kim</h1></li>
-          
-		<li class="navbar-item"><a class="navbar-link" href="/">Home</a></li>
+      <div class="container">
+        <ul class="navbar-list" id="theNavbar">
+          <li class="navbar-item"><h1 style="margin:0;padding-right:40px;text-transform:uppercase;color:#fff;letter-spacing:10px;">Adam Kim</h1></li>
+          <li class="navbar-item"><a class="navbar-link" href="/">Home</a></li>
           
 		  <li class="navbar-item">
             <a class="navbar-link" href="#" data-popover="#music">Music</a>
@@ -81,41 +85,43 @@
           <li class="navbar-item"><a class="navbar-link" href="#about" data-scroll>About</a></li>
 		  <li class="navbar-item"><a class="navbar-link" href="#contact" data-scroll>Contact</a></li> 
 	    </ul>
-
       </div>
     </nav>
 
 
-    <!--------------------------------------------------------------- ABOUT -->
-<div id='about-bg'>
-    <div class="container" section id="about" style="color:#fff;margin-top:-50px;padding-bottom:50px;">
-        <h1>About</h1>
-        <p>Adam Kim is a music producer based in San Diego. He plays the guitar, vocals.</p>
-        
-        <h2>keepitinside</h2>
-        
-        <h2 style="margin:0;">Spent Penny</h2>
-        Founded in 2015
-        <h5 style="margin:0;">Current Members</h5>
-        Adam Kim - Vocal, Guitar, Production.</br>
-        Connor Schultz - Lead Guitar, Backup Vocals.</br>
-        Cuong Luong - Bass.</br>
-        Alexander Pelletier - Drums.</br>
-        <h5 style="margin:0;">Past Members</h5>
-        Austin Chinn - Drums.
+    <!--------------------------------------------------- ABOUT -->
+
+
+    <div id='about-bg'>
+	<div class="container" section id="about" style="color:#fff;">
+    <h1>About</h1>
+    <p>Adam Kim is a music producer based in San Diego. He plays the guitar, vocals.</p>
+    
+    <h2>keepitinside</h2>
+    
+    <h2>Spent Penny</h2>
+    Founded in 2015
+    <h5 style="margin:0;">Current Members</h5>
+    Adam Kim - Vocal, Guitar, Production.</br>
+    Connor Schultz - Lead Guitar, Backup Vocals.</br>
+    Cuong Luong - Bass.</br>
+    Alexander Pelletier - Drums.</br>
+    <h5 style="margin:0;">Past Members</h5>
+    Austin Chinn - Drums.
     </div>
-</div>
+  		</div>
 
-<script type="text/javascript">
-    aboutBg = document.getElementById('about-bg').style;
-    aboutBg.backgroundImage="url(images/adam_hat.jpg)"; 
-    aboutBg.backgroundSize="cover";
-</script>
+    <script type="text/javascript">
+        aboutBg = document.getElementById('about-bg').style;
+        aboutBg.backgroundImage="url(images/adam_hat.jpg)"; // specify the image path here
+        aboutBg.backgroundSize="cover";
+        aboutBg.backgroundPosition="center";
+    </script>
 
 
 
-    <!-------------------------------------------------------------- CONTACT -->
-	<div class="container" section id="contact" style="margin-top:50px;">
+    <!--------------------------------------------------- CONTACT -->
+	<div class="container" section id="contact">
         <h1>Contact</h1>
         <p>Email: <a href="mailto:adamhkim54@gmail.com">adamhkim54@gmail.com</a></p>
     </div>
