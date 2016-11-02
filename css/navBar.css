@@ -5,7 +5,7 @@
   opacity:0.95; }
 
 /* Larger than tablet */
-@media (min-width: 985px) {
+@media (min-width: 1105px) {
   /* Navbar */
   .navbar + .docs-section {
     border-top-width: 0; }
