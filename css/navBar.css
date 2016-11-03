@@ -2,10 +2,11 @@
 
 .navbar {
   display: none;
-  opacity:0.95; }
+  opacity:0.95;
+  }
 
 /* Larger than tablet */
-@media (min-width: 1105px) {
+@media (min-width: 960px) {
   /* Navbar */
   .navbar + .docs-section {
     border-top-width: 0; }
@@ -13,8 +14,8 @@
   .navbar-spacer {
     display: block;
     width: 100%;
-    line-height: 6.5rem;
-    /*background: #333;*/
+    height: 6.5rem;
+    background: #fff;
     z-index: 99;
     /*border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;*/ }
@@ -39,7 +40,7 @@
     line-height: 6.5rem;
     color: #fff; }
   .navbar-link.active {
-    color: #fff; }
+    color: #33C3F0; }
   .has-docked-nav .navbar {
     position: fixed;
     top: 0;
@@ -49,6 +50,8 @@
   /* Re-overiding the width 100% declaration to match size of % based container */
   .has-docked-nav .navbar > .container {
     width: 80%; }
+
+
 
 
 /* Popover */
@@ -114,7 +117,7 @@
     border-bottom-width: 0; }
   .popover-link:hover {
     color: #fff;
-    background: #333; }
+    background: #33C3F0; }
   .popover-link:hover,
   .popover-item:first-child .popover-link:hover:after {
-    border-bottom-color: #333; }
+    border-bottom-color: #33C3F0; }
