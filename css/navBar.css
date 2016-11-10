@@ -28,10 +28,10 @@ ul.topnav li a {
 }
 
 ul.topnav li a:active {
-    color: #c72828;}
+    color: #D83304;}
 
 ul.topnav li a:hover {
-    color: #c72828;}
+    color: #D83304;}
 
 ul.topnav li.icon {
     display: none;}
@@ -64,3 +64,16 @@ ul.topnav li.icon {
     text-align: left;
   }
 }
+
+
+#spacing {
+    padding-top:30px;
+    padding-bottom:30px;}
+
+
+
+
+
+
+
+
