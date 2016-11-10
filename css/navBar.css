@@ -1,3 +1,11 @@
+.navbar-fixed {
+    top:0;
+    z-index:100;
+    position:fized;
+    width:100%;
+}
+
+
 .topnav {
     opacity:0.95;
 }

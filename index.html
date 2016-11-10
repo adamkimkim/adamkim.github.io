@@ -57,9 +57,8 @@
 
 
    <!--------------------------------------------------------------  NAV BAR -->
-<div class="header" style="background-color:#333;">
+<div class="navbar" style="background-color:#333;">
     <div class="container">
-        <div id="stickNav">
             <ul class="topnav" id="menu">
               <li><a class="active" href="/" style="font-size:40px;font-weight:100;">Adam Kim</a></li>
               <li><a href="/">Home</a></li>
@@ -73,7 +72,6 @@
                 <a href="javascript:void(0);" style="font-size:20px;margin-right:-40px;" onclick="myFunction()">&#9776;</a>
               </li>
             </ul>
-        </div>
     </div>
 </div>
 
@@ -89,40 +87,63 @@
             x.className = "topnav";
             }
     }
+
+// sticky
+/*
+$(document).ready(function() {
+  
+  $(window).scroll(function () {
+      //if you hard code, then use console.log to determine when you want the
+      //nav bar to stick.  
+      console.log($(window).scrollTop())
+    if ($(window).scrollTop() > 280) {
+      $('#header').addClass('navbar-fixed');
+    }
+    if ($(window).scrollTop() < 281) {
+      $('#header').removeClass('navbar-fixed');
+    }
+  });
+});
+*/
+
 </script>
 
     <!---------------------------------------------------------------- ABOUT -->
-<div id='about-bg' >
+<div id='about-bg' style="background-color:#333;">
     <div class="container" section id="about">
         <div id="spacing">
             <h1>About</h1>
             Adam Kim is a music producer based in San Diego. He plays the guitar, vocals.
-            
-            <h3>keepitinside</h3>
-            
-            <h3 style="margin:0;">Spent Penny</h3>
-            Founded in 2015
-            <h5 style="margin:0;">Current Members</h5>
-            Adam Kim - Vocal, Guitar, Production.</br>
-            Connor Schultz - Lead Guitar, Backup Vocals.</br>
-            Cuong Luong - Bass.</br>
-            Alexander Pelletier - Drums.</br>
-            <h5 style="margin:0;">Past Members</h5>
-            Austin Chinn - Drums.
+            <div class="row" style="margin-top:20px;">
+                <div class="six columns">
+                    <h3>keepitinside</h3>
+                </div>
+                <div class="six columns">
+                    <h3 style="margin:0;">Spent Penny</h3>
+                    Founded in 2015
+                    <h5 style="margin:0;">Current Members</h5>
+                    Adam Kim - Vocal, Guitar, Production.</br>
+                    Connor Schultz - Lead Guitar, Backup Vocals.</br>
+                    Cuong Luong - Bass.</br>
+                    Alexander Pelletier - Drums.</br>
+                    <h5 style="margin:0;">Past Members</h5>
+                    Austin Chinn - Drums.
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <script type="text/javascript">
     aboutBg = document.getElementById('about-bg').style;
-    aboutBg.backgroundImage="url(images/adam_hat.jpg)"; 
-    aboutBg.backgroundSize="cover";
+    //aboutBg.backgroundImage="url(images/adam_hat.jpg)";
+    //aboutBg.backgroundSize="cover";
 </script>
 
 
 
     <!-------------------------------------------------------------- CONTACT -->
-<div id='contact-bg'>
+<div id='contact-bg' style="background-color:#333;">
 	<div class="container" section id="contact">
         <div id="spacing">
             <h1>Contact</h1>
@@ -136,8 +157,8 @@
 
 <script type="text/javascript">
     aboutBg = document.getElementById('contact-bg').style;
-    aboutBg.backgroundImage="url(images/side_hat.png)"; 
-    aboutBg.backgroundSize="cover";
+    //aboutBg.backgroundImage="url(images/side_hat.png)";
+    //aboutBg.backgroundSize="cover";
 </script>
 
   <!-- End Document
