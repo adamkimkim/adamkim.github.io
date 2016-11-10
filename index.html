@@ -24,6 +24,7 @@
   <link rel="stylesheet" href="css/navBar.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
 
+
   <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
@@ -54,42 +55,45 @@
     </script>
 
 
-   <!-----------------------------------------------------------    NAV BAR -->
-   <div class="header" style="background-color:#333;">
+   <!--------------------------------------------------------------  NAV BAR -->
+<div class="header" style="background-color:#333;">
     <div class="container">
-    <nav class="navbar" style="background-color:#333;">
-      <div class="container">
-        <ul class="navbar-list">
-		  <li class="navbar-item"><a class="navbar-link" href="/" style="font-size:4rem;font-weight:100;">Adam Kim</a></li>
-		  <li class="navbar-item"><a class="navbar-link" href="/">Home</a></li>
-          
-		  <li class="navbar-item">
-            <a class="navbar-link" href="#" data-popover="#music">Music</a>
-            <div id="music" class="popover">
-              <ul class="popover-list">
-                <li class="popover-item">
-                  <a class="popover-link" href="https://soundcloud.com/keepitinside">keepitinside</a>
-                </li>
-                <li class="popover-item">
-                  <a class="popover-link" href="https://soundcloud.com/spentpennytheband">spent penny</a>
-                </li>
-              </ul>
-            </div>
-          </li> <!-- endof music popover -->
-
-          <li class="navbar-item"><a class="navbar-link" href="#shows" data-scroll>Shows</a></li>
-		  <li class="navbar-item"><a class="navbar-link" href="#photos" data-scroll>Photos</a></li>
-          <li class="navbar-item"><a class="navbar-link" href="#about" data-scroll>About</a></li>
-		  <li class="navbar-item"><a class="navbar-link" href="#contact" data-scroll>Contact</a></li> 
-	    </ul>
-      </div>
-    </nav>
+        <div id="stickNav">
+            <ul class="topnav" id="menu">
+              <li><a class="active" href="/" style="font-size:40px;font-weight:100;">Adam Kim</a></li>
+              <li><a href="/">Home</a></li>
+              <li><a href="#music">Music</a></li>
+              <li><a href="#shows">Shows</a></li>
+              <li><a href="#photos">Photos</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+              
+              <li class="icon">
+                <a href="javascript:void(0);" style="font-size:40px;" onclick="myFunction()">&#9776;</a>
+              </li>
+            </ul>
+        </div>
     </div>
-    </div>
+</div>
 
-    <!--------------------------------------------------------------- ABOUT -->
-<div id='about-bg'>
+<script>
+    function myFunction() {
+        var x = document.getElementById("menu");
+        if (x.className === "topnav")
+            {
+            x.className += " responsive";
+            }
+        else
+            {
+            x.className = "topnav";
+            }
+    }
+</script>
+
+    <!---------------------------------------------------------------- ABOUT -->
+<div id='about-bg' >
     <div class="container" section id="about">
+    
         <h1>About</h1>
         Adam Kim is a music producer based in San Diego. He plays the guitar, vocals.
         
