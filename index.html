@@ -28,12 +28,11 @@
 
   <!-- JavaScript
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
       <link rel="stylesheet" href="css/ie.css">
     <![endif]-->
-  <script src="js/site.js"></script>
 	
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -45,8 +44,10 @@
    <!--------------------------------------------------------------  HEADER -->
    	<div class="row">
 		  <div class="eleven column" id='header'>
-			<h1 style="margin-top:65%;"></h1>
+			<h1 style="margin-top:65%;text-align:center;font-size:50px;letter-spacing:25px;">11.11.16</h1>
+            
    		  </div>
+
   	</div>
 
     <script type="text/javascript">
@@ -57,10 +58,11 @@
 
 
    <!--------------------------------------------------------------  NAV BAR -->
-<div class="navbar" style="background-color:#333;">
+
+<div class="navbar" style="background-color:#222;" >
     <div class="container">
             <ul class="topnav" id="menu">
-              <li><a class="active" href="/" style="font-size:40px;font-weight:100;">Adam Kim</a></li>
+              <li><a class="active" href="/" style="font-size:13px;font-weight:100;">keepitinside</a></li>
               <li><a href="/">Home</a></li>
               <li><a href="#music">Music</a></li>
               <li><a href="#shows">Shows</a></li>
@@ -75,6 +77,8 @@
     </div>
 </div>
 
+
+
 <script>
     function myFunction() {
         var x = document.getElementById("menu");
@@ -87,45 +91,57 @@
             x.className = "topnav";
             }
     }
-
-// sticky
-/*
-$(document).ready(function() {
-  
-  $(window).scroll(function () {
-      //if you hard code, then use console.log to determine when you want the
-      //nav bar to stick.  
-      console.log($(window).scrollTop())
-    if ($(window).scrollTop() > 280) {
-      $('#header').addClass('navbar-fixed');
-    }
-    if ($(window).scrollTop() < 281) {
-      $('#header').removeClass('navbar-fixed');
-    }
-  });
-});
-*/
-
 </script>
 
-    <!---------------------------------------------------------------- ABOUT -->
-<div id='about-bg' style="background-color:#333;">
-    <div class="container" section id="about">
+<!-------------------------------------------------------------------- Music -->
+<div id='music-bg' style="background-color:#222;margin-top:1px;">
+    <div class="container" section id="music">
         <div id="spacing">
-            <h1>About</h1>
-            Adam Kim is a music producer based in San Diego. He plays the guitar, vocals.
+            <h1>Music</h2>
             <div class="row" style="margin-top:20px;">
                 <div class="six columns">
                     <h3>keepitinside</h3>
+                    
                 </div>
                 <div class="six columns">
-                    <h3 style="margin:0;">Spent Penny</h3>
+                    <iframe src="https://embed.spotify.com/?uri=spotify:album:19OPm9cAedraq0FV4TWayP" width="300" height="380" frameborder="0" allowtransparency="true"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------------------------------------------------------------- SHOWS -->
+<div id='shows-bg' style="background-color:#222;margin-top:1px;">
+    <div class="container" section id="shows">
+        <div id="spacing">
+            <h1>Shows</h1>
+            <h2 style="text-transformation:uppercase;">Friday Nov 11 8PM-11PM | Album release party</h2>
+            Come listen to keepitinside's new album within! <a href="https://www.facebook.com/events/1124254990944779/">RSVP via facebook here</a>.
+            
+        </div>
+    </div>
+</div>
+
+
+<!-------------------------------------------------------------------- ABOUT -->
+<div id='about-bg' style="background-color:#222;margin-top:1px;">
+    <div class="container" section id="about">
+        <div id="spacing">
+            <h1>About</h1>
+            Adam Kim is a music producer based in San Diego.
+            <div class="row" style="margin-top:20px;">
+                <div class="six columns">
+                    <h3 style="margin:0;">keepitinside <a href="https://soundcloud.com/keepitinside"><i class="fa fa-soundcloud" aria-hidden="true"></i></a> <a href="https://www.facebook.com/keepitinside"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="https://play.spotify.com/artist/0Oiylv6E2eKJ2oaMUbByAz"><i class="fa fa-spotify" aria-hidden="true"></i></a></h3>
+                    keepitinside is a project where the music is focused on the inner self. Using a mixture of electronic beats and live instruments, the music attempts to combine a mellow background supported by harsh instruments. keepitinside strives to convey that there are dark sides to smiling faces and, sometimes, all you need to do is listen.
+                </div>
+                <div class="six columns">
+                    <h3 style="margin:0;">Spent Penny <a href="https://soundcloud.com/spentpennytheband"><i class="fa fa-soundcloud" aria-hidden="true"></i></a> <a href="https://www.facebook.com/spentpennytheband"><i class="fa fa-facebook" aria-hidden="true"></i></a> </h3>
                     Founded in 2015
                     <h5 style="margin:0;">Current Members</h5>
-                    Adam Kim - Vocal, Guitar, Production.</br>
-                    Connor Schultz - Lead Guitar, Backup Vocals.</br>
+                    Adam Kim - Vocals, Guitar, Production.</br>
                     Cuong Luong - Bass.</br>
                     Alexander Pelletier - Drums.</br>
+                    Connor Schultz - Lead Guitar, Backup Vocals.</br>
                     <h5 style="margin:0;">Past Members</h5>
                     Austin Chinn - Drums.
                 </div>
@@ -143,13 +159,13 @@ $(document).ready(function() {
 
 
     <!-------------------------------------------------------------- CONTACT -->
-<div id='contact-bg' style="background-color:#333;">
+<div id='contact-bg' style="background-color:#222;margin-top:1px;">
 	<div class="container" section id="contact">
         <div id="spacing">
             <h1>Contact</h1>
-                <ul class="icons">
-                    <li><a href="mailto:adamhkim54@gmail.com" class="fa-envelope-o">Email</a></li>&nbsp;
-                    <li><a href="https://soundcloud.com/keepitinside" class="fa-soundcloud">Soundcloud</a></li>
+                <ul class="icons" style="text-align:center;">
+                    <li><a href="https://www.facebook.com/admakimi/" class="fa-facebook" alt="Adam Kim | facebook">Facebook</a></li>&nbsp;
+                    <li><a href="mailto:adamhkim54@gmail.com" class="fa-envelope-o" alt="Adam Kim | email">Email</a></li>&nbsp;
                 </ul>
         </div>
     </div>
@@ -161,6 +177,20 @@ $(document).ready(function() {
     //aboutBg.backgroundSize="cover";
 </script>
 
+<!------------------------------------------------------------------- FOOTER -->
+<div id='footer-bg' style="background-color:#222;margin-top:1px;">
+	<div class="container">
+        <div id="spacing">
+            <p style="text-align:center";>&copy; 2016 keepitinside</p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    aboutBg = document.getElementById('contact-bg').style;
+    //aboutBg.backgroundImage="url(images/side_hat.png)";
+    //aboutBg.backgroundSize="cover";
+</script>
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
