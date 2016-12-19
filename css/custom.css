@@ -1,20 +1,50 @@
 @charset "UTF-8";
 @import url(font-awesome.min.css);
 
+
+
+.bg-container {
+    margin:10px;
+}
+
 #block {
     color:#333;}
 
 #spacing {
-    padding-top:30px;
-    padding-bottom:30px;}
+    padding-top:5%;
+    padding-bottom:5%;}
 
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 8rem 0 7rem;
+  
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+
+/* Overlay
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.overlay {
+    background-color:#222;
+    opacity:.78;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
 
 
 
 
 /*
-FROM :
-Identity by HTML5 UP
+Icons
+
+via Identity by HTML5 UP
 html5up.net | @ajlkn
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
@@ -98,7 +128,7 @@ ul.icons li a:before {
 }
 
 ul.icons li a:hover {
-    border-color: #D83304;;
+    border-color: #D83304;
 }
 
 @media screen and (max-width: 480px) {
@@ -107,4 +137,58 @@ ul.icons li a:before {
     font-size: 1.5rem;
 }
 
+}
+
+/* Header
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#header {
+    text-align:center;
+    font-size:50px;
+    font-weight:100;
+    letter-spacing:25px;
+    padding-bottom:50%;
+    
+    background-image:url(/images/sad_keir.png);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Music
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#music-bg {
+    background-image:url(/images/audience-jonathan-denney.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Shows
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#shows-bg {
+    background-image:url(/images/guitar-austin-prock.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+/* About
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#about-bg {
+    background-image:url(/images/producing-james-stamler.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Contact
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#contact-bg {
+    background-image:url(/images/electricG-william-iven.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#footer-bg {
+    background-image:url(/images/tap-cristian-guanipa.jpg);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
 }

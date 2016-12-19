@@ -15,7 +15,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
 
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -40,26 +40,15 @@
 
 </head>
 <body>
-
+    <div class="bg-container">
    <!--------------------------------------------------------------  HEADER -->
-   	<div class="row">
-		  <div class="eleven column" id='header'>
-			<h1 style="margin-top:65%;text-align:center;font-size:50px;letter-spacing:25px;">11.11.16</h1>
-            
-   		  </div>
-
+   	<div class="section" id='header'>
+        <h1>Available now on Spotify</h1>
   	</div>
-
-    <script type="text/javascript">
-        bgImg = document.getElementById('header').style;
-        bgImg.backgroundImage="url(images/sad_keir.png)"; 
-        bgImg.backgroundSize="cover";
-    </script>
-
 
    <!--------------------------------------------------------------  NAV BAR -->
 
-<div class="navbar" style="background-color:#222;" >
+<div class="navbar" style="background-color:#222;margin:auto;" >
     <div class="container">
             <ul class="topnav" id="menu">
               <li><a class="active" href="/" style="font-size:13px;font-weight:100;">keepitinside</a></li>
@@ -95,7 +84,7 @@
 
 <!-------------------------------------------------------------------- Music -->
 <div id='music-bg' style="background-color:#222;margin-top:1px;">
-    <div class="container" section id="music">
+    <div class="section container" id="music">
         <div id="spacing">
             <h1>Music</h2>
             <div class="row" style="margin-top:20px;">
@@ -111,57 +100,59 @@
         </div>
     </div>
 </div>
+
 <!-------------------------------------------------------------------- SHOWS -->
 <div id='shows-bg' style="background-color:#222;margin-top:1px;">
-    <div class="container" section id="shows">
+    <div class="overlay">
+    <div class="section container" id="shows">
         <div id="spacing">
             <h1>Shows</h1>
             <h2 style="text-transformation:uppercase;">Friday Nov 11 8PM-11PM | Album release party</h2>
             Come listen to keepitinside's new album within! <a href="https://www.facebook.com/events/1124254990944779/">RSVP via facebook here</a>.
             
         </div>
+        </div>
     </div>
 </div>
 
-
 <!-------------------------------------------------------------------- ABOUT -->
 <div id='about-bg' style="background-color:#222;margin-top:1px;">
-    <div class="container" section id="about">
-        <div id="spacing">
-            <h1>About</h1>
-            Adam Kim is a music producer based in San Diego.
-            <div class="row" style="margin-top:20px;">
-                <div class="six columns">
-                    <h3 style="margin:0;">keepitinside <a href="https://soundcloud.com/keepitinside"><i class="fa fa-soundcloud" aria-hidden="true"></i></a> <a href="https://www.facebook.com/keepitinside"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="https://play.spotify.com/artist/0Oiylv6E2eKJ2oaMUbByAz"><i class="fa fa-spotify" aria-hidden="true"></i></a></h3>
-                    keepitinside is a project where the music is focused on the inner self. Using a mixture of electronic beats and live instruments, the music attempts to combine a mellow background supported by harsh instruments. keepitinside strives to convey that there are dark sides to smiling faces and, sometimes, all you need to do is listen.
-                </div>
-                <div class="six columns">
-                    <h3 style="margin:0;">Spent Penny <a href="https://soundcloud.com/spentpennytheband"><i class="fa fa-soundcloud" aria-hidden="true"></i></a> <a href="https://www.facebook.com/spentpennytheband"><i class="fa fa-facebook" aria-hidden="true"></i></a> </h3>
-                    Founded in 2015
-                    <h5 style="margin:0;">Current Members</h5>
-                    Adam Kim - Vocals, Guitar, Production.</br>
-                    Cuong Luong - Bass.</br>
-                    Alexander Pelletier - Drums.</br>
-                    Connor Schultz - Lead Guitar, Backup Vocals.</br>
-                    <h5 style="margin:0;">Past Members</h5>
-                    Austin Chinn - Drums.
+    <div class="overlay">
+        <div class="section container" id="about">
+            <div id="spacing">
+                <h1>About</h1>
+                Adam Kim is a music producer based in San Diego.
+                <div class="row" style="margin-top:20px;">
+                    <div class="six columns">
+                        <h3 style="margin:0;">keepitinside <a href="https://soundcloud.com/keepitinside"><i class="fa fa-soundcloud" aria-hidden="true"></i></a> <a href="https://www.facebook.com/keepitinside"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="https://play.spotify.com/artist/0Oiylv6E2eKJ2oaMUbByAz"><i class="fa fa-spotify" aria-hidden="true"></i></a></h3>
+                        keepitinside is a project where the music is focused on the inner self. Using a mixture of electronic beats and live instruments, the music attempts to combine a mellow background supported by harsh instruments. keepitinside strives to convey that there are dark sides to smiling faces and, sometimes, all you need to do is listen.
+                        
+                        </br></br>
+                        
+                        Support keepitinside via venmo @adamkimkim
+                        
+                    </div>
+                    <div class="six columns">
+                        <h3 style="margin:0;">Spent Penny <a href="https://soundcloud.com/spentpennytheband"><i class="fa fa-soundcloud" aria-hidden="true"></i></a> <a href="https://www.facebook.com/spentpennytheband"><i class="fa fa-facebook" aria-hidden="true"></i></a> </h3>
+                        Founded in 2015
+                        <h5 style="margin:0;">Current Members</h5>
+                        Adam Kim - Vocals, Guitar, Production.</br>
+                        Cuong Luong - Bass.</br>
+                        Alexander Pelletier - Drums.</br>
+                        Connor Schultz - Lead Guitar, Backup Vocals.</br>
+                        <h5 style="margin:0;">Past Members</h5>
+                        Austin Chinn - Drums.
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<script type="text/javascript">
-    aboutBg = document.getElementById('about-bg').style;
-    //aboutBg.backgroundImage="url(images/adam_hat.jpg)";
-    //aboutBg.backgroundSize="cover";
-</script>
-
-
 
     <!-------------------------------------------------------------- CONTACT -->
 <div id='contact-bg' style="background-color:#222;margin-top:1px;">
-	<div class="container" section id="contact">
+	<div class="section container" id="contact">
         <div id="spacing">
             <h1>Contact</h1>
                 <ul class="icons" style="text-align:center;">
@@ -172,15 +163,10 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    aboutBg = document.getElementById('contact-bg').style;
-    //aboutBg.backgroundImage="url(images/side_hat.png)";
-    //aboutBg.backgroundSize="cover";
-</script>
 
 <!------------------------------------------------------------------- FOOTER -->
 <div id='footer-bg' style="background-color:#222;margin-top:1px;">
-	<div class="container">
+	<div class="section container">
         <div id="spacing">
             <p style="text-align:center";>&copy; 2016 keepitinside</p>
         </div>
@@ -188,11 +174,12 @@
 </div>
 
 <script type="text/javascript">
-    aboutBg = document.getElementById('contact-bg').style;
-    //aboutBg.backgroundImage="url(images/side_hat.png)";
-    //aboutBg.backgroundSize="cover";
+    aboutBg = document.getElementById('footer-bg').style;
+    aboutBg.backgroundImage="url(images/tap-cristian-guanipa.jpg)";
+    aboutBg.backgroundSize="cover";
 </script>
   <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  </div>
 </body>
 </html>
