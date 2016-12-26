@@ -143,53 +143,72 @@ ul.icons li a:before {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #header {
     text-align:center;
-    font-size:50px;
+    font-size:50px; font-size: 2.5vw;
     font-weight:100;
     letter-spacing:25px;
-    padding-bottom:50%;
+    padding-bottom:37%;
     
-    background-image:url(/images/sad_keir.png);
-    background-repeat:no-repeat;
-    background-size: 100% 100%;
+    background: url(/images/sad_keir.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    
 }
 
 /* Music
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #music-bg {
+/*
     background-image:url(/images/audience-jonathan-denney.jpg);
     background-repeat:no-repeat;
-    /*background-size: 100% 100%;*/
+    /*background-size: 100% 100%;
     background-size:cover;
+ */
+    background: url(/images/audience-jonathan-denney.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* Shows
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #shows-bg {
-    background-image:url(/images/guitar-austin-prock.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
+    background: url(/images/guitar-austin-prock.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* About
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #about-bg {
-    background-image:url(/images/producing-james-stamler.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
+    background: url(/images/producing-james-stamler.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* Contact
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #contact-bg {
-    background-image:url(/images/electricG-william-iven.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
+    background: url(/images/electricG-william-iven.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 #footer-bg {
-    background-image:url(/images/tap-cristian-guanipa.jpg);
-    background-repeat:no-repeat;
-    background-size:cover;
+    background: url(/images/tap-cristian-guanipa.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
 }
