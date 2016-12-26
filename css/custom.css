@@ -158,7 +158,8 @@ ul.icons li a:before {
 #music-bg {
     background-image:url(/images/audience-jonathan-denney.jpg);
     background-repeat:no-repeat;
-    background-size: 100% 100%;
+    /*background-size: 100% 100%;*/
+    background-size:cover;
 }
 
 /* Shows
@@ -166,7 +167,7 @@ ul.icons li a:before {
 #shows-bg {
     background-image:url(/images/guitar-austin-prock.jpg);
     background-repeat:no-repeat;
-    background-size: 100% 100%;
+    background-size:cover;
 }
 
 /* About
@@ -174,7 +175,7 @@ ul.icons li a:before {
 #about-bg {
     background-image:url(/images/producing-james-stamler.jpg);
     background-repeat:no-repeat;
-    background-size: 100% 100%;
+    background-size:cover;
 }
 
 /* Contact
@@ -182,7 +183,7 @@ ul.icons li a:before {
 #contact-bg {
     background-image:url(/images/electricG-william-iven.jpg);
     background-repeat:no-repeat;
-    background-size: 100% 100%;
+    background-size:cover;
 }
 
 /* Footer
@@ -190,5 +191,5 @@ ul.icons li a:before {
 #footer-bg {
     background-image:url(/images/tap-cristian-guanipa.jpg);
     background-repeat:no-repeat;
-    background-size: 100% 100%;
+    background-size:cover;
 }
