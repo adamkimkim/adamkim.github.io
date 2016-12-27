@@ -412,7 +412,10 @@ there.
 
 
 /* Larger than mobile */
-@media (min-width: 400px) {}
+@media (min-width: 400px) {
+    font-size:100%;
+    padding:20px;
+}
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (min-width: 550px) {}
