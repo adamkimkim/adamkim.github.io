@@ -8,141 +8,76 @@
 #header {
     text-align:center;
     text-transform:uppercase;
-    
-    background: url(/images/sad_keir.png) no-repeat center center; /* removed fixed */
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
-  padding: 5% 10% 50% 10%;
-  
-  }
-
-
-/* Nav Bar
-------------- */
-/* TODO responsive padding change */
-/* Nav Bar
-------------- */
-/* TODO responsive padding change */
-
-/*
-ul.nav-content {
-    background-color:#222;
-    height:60px;
-    opacity:0.95;
+    background: url(/images/sad_keir.png) no-repeat center center fixed; /* removed fixed */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding:50px;
+    height:550px; /* smaller on mobile and larger on mega screens */
 }
-ul.nav-content li {
-    list-style-type: none;
-    float:left;
+
+
+/* Nav Bar
+------------- */
+ul.navbar {
+    list-style-type:none;
+    margin:0;
+    padding:0;
     overflow:hidden;
-    text-transform:uppercase;
-    padding-right: 1%;
-    letter-spacing:0.2rem;
-    line-height: 5rem;
-    padding: 5% 10px;
+    background-color:#222;
+    z-index:9999;
 }
 
-ul.nav-content a {
+ul.navbar li {
+    float:left;
+}
+
+ul.navbar li a {
+    display:inline-block;
+    text-align:center;
+    padding:14px 10px;
+    transition:0.3s;
+    font-size:20px;
     color:#fff;
-}
-ul.nav-content a:active {
-    color: #D83304;
+    text-transform:uppercase;
 }
 
-ul.nav-content a:hover {
-    color: #D83304;
+ul.navbar li a:hover {
+    color:#D83304;
 }
 
-ul.nav-content li.icon {
+ul.navbar li.icon {
     display:none;
 }
 
-@media (min-width: 300px) and (max-width: 800px) {
-  ul.nav-content li:not(:first-child) {
-    display:none;
-  }
-  ul.nav-content li.icon {
-    float:right;
-    padding-right:15%;
-    display:inline;
-  }
-}
-
-@media (min-width: 300px) and (max-width: 800px) {
-  ul.nav-content.responsive {
-    position: relative;
-    background-color:#333;
-    font-size:12px;
+@media screen and (max-width:730px) {
+    ul.navbar li:not(:first-child){
+        display:none;
     }
-  
-  ul.nav-content.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.nav-content.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.nav-content.responsive li a {
-    display: block;
-    text-align: left;
-  }
-}
-*/
-
-
-ul.nav-content {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-ul.nav-content li {float: left;}
-
-ul.nav-content li a {
-  display: inline-block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 25px 10px 14px 20px;
-  text-decoration: none;
-  text-transform:uppercase;
-  letter-spacing:0.2rem;
-  transition: 0.3s;
-  font-size: 17px;
-}
-ul.nav-content a:hover {
-    color: #D83304;
-}
-ul.nav-content li.icon {display: none;}
-
-@media screen and (max-width:680px) {
-  ul.nav-content li:not(:first-child) {display: none;}
-  ul.nav-content li.icon {
-    float: right;
-    display: inline-block;
-  }
-}
-
-@media screen and (max-width:680px) {
-  ul.nav-content.responsive {position: relative;}
-  ul.nav-content.responsive li.icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-  ul.nav-content.responsive li {
-    float: none;
-    display: inline;
-  }
-  ul.nav-content.responsive li a {
-    display: block;
-    text-align: left;
-  }
+    ul.navbar li.icon {
+        float:right;
+        display:inline-block;
+    }
+    
+    ul.navbar.responsive {
+        position:relative;
+    }
+    
+    ul.navbar.responsive li.icon {
+        position:absolute;
+        right:0;
+        top:0;
+    }
+    
+    ul.navbar.responsive li {
+        float:none;
+        display:inline;
+    }
+    ul.navbar.responsive li a {
+        display:block;
+        text-align:left;
+    }
 }
 
 
@@ -243,15 +178,14 @@ ul.icons li a:hover {
 
 ul.icons li a:before {
     font-size: 1.5rem;
-}
-
+    }
 }
 
 
 /* Overlay
 ------------- */
 .bg {
-    background-color: rgba(1,0,0, 0.5);
+    background-color: rgba(1,0,0, 0.75);
     padding: 10% 5% 10% 5%;
 }
 
@@ -259,21 +193,20 @@ ul.icons li a:before {
 ------------- */
 #music {
     background: url(/images/audience-jonathan-denney.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Shows
 ------------- */
 #shows {
-   background: url(/images/guitar-austin-prock.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
+    background: url(/images/guitar-austin-prock.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -282,22 +215,20 @@ ul.icons li a:before {
 ------------- */
 #about {
     background: url(/images/producing-james-stamler.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 /* Contact
 ------------- */
 #contact {
     background: url(/images/electricG-william-iven.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -306,12 +237,10 @@ ul.icons li a:before {
 
 #footer {
     background: url(/images/tap-cristian-guanipa.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
