@@ -41,6 +41,7 @@ ul.navbar li a {
     font-size:20px;
     color:#fff;
     text-transform:uppercase;
+    letter-spacing:0.2rem;
 }
 
 ul.navbar li a:hover {
@@ -51,7 +52,7 @@ ul.navbar li.icon {
     display:none;
 }
 
-@media screen and (max-width:730px) {
+@media screen and (max-width:830px) {
     ul.navbar li:not(:first-child){
         display:none;
     }
