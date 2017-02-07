@@ -1,0 +1,294 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-transform:uppercase;
+    font-weight:100;
+}
+
+.center-div-outer {
+    position:absolute;
+    top:30%;
+    left:50%;
+}
+.center-div-inner {
+    position:relative;
+    top:-30%;
+    left:-50%;
+}
+
+/* ---- general --- */
+body {
+  height: 100%;
+  background-color: #222;
+  position:relative;
+}
+
+a,a:hover {
+    text-decoration:none;
+    text-transform:uppercase;
+}
+
+a {
+    color:#fff;
+}
+
+a:hover {
+    color:#D83304;
+}
+
+.container {
+    padding-top:60px;
+}
+
+/*--- NAVBAR ---*/
+.navbar-custom {
+  background-color: #333;
+}
+
+.navbar-custom .navbar-brand {
+  color: #fff;
+}
+.navbar-custom .navbar-brand:hover,
+.navbar-custom .navbar-brand:focus {
+  color: #D83304;
+  background-color: transparent;
+}
+.navbar-custom .navbar-text {
+  color: #fff;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #fff;
+}
+.navbar-custom .navbar-nav > li > a:hover,
+.navbar-custom .navbar-nav > li > a:focus {
+  color: #D83304;
+  background-color: transparent;
+}
+.navbar-custom .navbar-nav > .active > a,
+.navbar-custom .navbar-nav > .active > a:hover,
+.navbar-custom .navbar-nav > .active > a:focus {
+  color: #D83304;
+  background-color: #e7e7e7;
+}
+.navbar-custom .navbar-nav > .disabled > a,
+.navbar-custom .navbar-nav > .disabled > a:hover,
+.navbar-custom .navbar-nav > .disabled > a:focus {
+  color: #fff;
+  background-color: transparent;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #333;
+}
+.navbar-custom .navbar-toggle:hover,
+.navbar-custom .navbar-toggle:focus {
+  background-color: #333;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #888;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #333;
+}
+.navbar-custom .navbar-nav > .open > a,
+.navbar-custom .navbar-nav > .open > a:hover,
+.navbar-custom .navbar-nav > .open > a:focus {
+  color: #D83304;
+  background-color: #222;
+}
+@media (max-width: 767px) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #333;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #e7e7e7;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-custom .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #fff;
+    background-color: transparent;
+  }
+}
+.navbar-custom .navbar-link {
+  color: #fff;
+}
+.navbar-custom .navbar-link:hover {
+  color: #fff;
+}
+.navbar-custom .btn-link {
+  color: #fff;
+}
+.navbar-custom .btn-link:hover,
+.navbar-custom .btn-link:focus {
+  color: #fff;
+}
+.navbar-custom .btn-link[disabled]:hover,
+fieldset[disabled] .navbar-custom .btn-link:hover,
+.navbar-custom .btn-link[disabled]:focus,
+fieldset[disabled] .navbar-custom .btn-link:focus {
+  color: #ccc;
+}
+
+
+
+
+/* Music
+------------- */
+#music {
+    background: url(../../images/sad_keir.png) no-repeat center center fixed; /* removed fixed */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    color:#fff;
+    position:absolute;
+    left:0;
+    right:0;
+    height:680px; /* smaller on mobile and larger on mega screens */
+    
+    overflow:hidden;
+}
+
+#album_description {
+    text-align:right;
+    list-style:inside;
+    margin-top:100px;
+}
+
+/* album containers */
+#within-album {
+    /*background: url(../../images/within-album-pic.png) no-repeat ;
+    background-size: 500px;*/
+    margin-top:100px;
+    
+    position:absolute;
+    left:0;
+    right:0;
+    height:680px;
+}
+
+
+
+/* Shows
+------------- */
+#shows {
+    background: url(../../images/audience-jonathan-denney.jpg) no-repeat center center fixed; /* removed fixed */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    color:#fff;
+    position:absolute;
+    left:0;
+    right:0;
+    top:680px;
+    height:680px; /* smaller on mobile and larger on mega screens */
+   }
+
+.shows-round-border {
+    border-radius:100px;
+    width:90%;
+    height:150px;
+    padding:10px 5px 10px 150px;
+    background:#333;
+    margin:auto;
+}
+
+
+@media (max-width: 600px) {
+    .shows-round-border {
+        padding:10px 30px;
+    }
+    #show-header {
+        font-size:16px;
+    }
+    #show-description {
+        font-size:12px;
+    }
+}
+
+/* About
+------------- */
+#about {
+    background: url(../../images/producing-james-stamler.jpg) no-repeat center center fixed; /* removed fixed */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    color:#fff;
+
+    position:absolute;
+    left:0;
+    right:0;
+    top:1360px;
+    height:680px; /* smaller on mobile and larger on mega screens */
+}
+
+/* Contact
+------------- */
+#contact {
+    background: url(../../images/tap-cristian-guanipa.jpg) no-repeat center center fixed;     webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    color:#fff;
+    position:absolute;
+    left:0;
+    right:0;
+    top:2040px;
+    height:680px;  /* smaller on mobile and larger on mega screens */
+}
+
+.contact-cover {
+    position:absolute;
+    left:50%;
+    right:0;
+    top:0;
+    bottom:0;
+    background-color:rgba(51,51,51,0.8)
+}
+
+@media (max-width: 600px) {
+    .contact-cover {
+        left:0;
+    }
+    #contact-header {
+        position:relative; /* z index only works on positioned elements */
+        z-index:99;
+    }
+}
+
+
+
+/* Overlay
+------------- */
+.bg {
+    background-color: rgba(51,51,51, 0.80);
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+
+
+

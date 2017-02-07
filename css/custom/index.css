@@ -1,0 +1,77 @@
+@charset "UTF-8";
+@import url(font-awesome.min.css);
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+.center-div-outer {
+    position:absolute;
+    top:30%;
+    left:50%;
+}
+.center-div-inner {
+    position:relative;
+    top:-30%;
+    left:-50%;
+}
+
+
+/* ---- LANDING PAGE --- */
+body {
+  height: 100%;
+  background-color: #222;
+}
+
+a,a:hover {
+    text-decoration:none;
+    text-transform:uppercase;
+}
+a {
+    color:#fff;
+}
+a:hover {
+    color:#D83304;
+}
+
+.landing-page {
+    background: url(../../images/side_hat.png) no-repeat center center fixed; /* removed fixed */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+
+}
+
+#landing-page-cover {
+    position:absolute;
+    left:50%;
+    right:0;
+    bottom:0;
+    top:0;
+    
+    background-color:rgba(51,51,51,0.8);
+    color:#fff;
+    padding:250px 150px;
+}
+
+#subheading {
+    line-height:1.5;
+}
+
+@media (max-width: 600px) {
+    #landing-page-cover {
+        left:0;
+    }
+    .center-div {
+        right:auto;
+    }
+}
+
+
