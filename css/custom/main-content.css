@@ -17,6 +17,7 @@
 h1 {
     text-transform:uppercase;
     font-weight:100;
+    color:#fff;
 }
 
 .center-div-outer {
@@ -285,7 +286,23 @@ fieldset[disabled] .navbar-custom .btn-link:focus {
     }
 }
 
+/* subscribe
+------------- */
+#subscribe {
+    position:absolute;
+    left:0;
+    right:0;
+    top:2720px;
+    height:680px;  /* smaller on mobile and larger on mega screens */
+}
 
+#mc_embed_signup {
+    background:transparent;
+    clear:left;
+    font:14px 'Roboto',sans-serif;
+    width:100%;
+    
+}
 
 /* Overlay
 ------------- */
