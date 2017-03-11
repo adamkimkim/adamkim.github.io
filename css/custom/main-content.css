@@ -6,11 +6,9 @@
 }
 
 #copyright {
-    z-index:999;
     color:#fff;
-    position:fixed;
-    right:10px;
-    bottom:3px;
+    z-index:999;
+    margin-top:490px;
     font-size:10px;
 }
 
