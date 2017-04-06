@@ -157,7 +157,7 @@ fieldset[disabled] .navbar-custom .btn-link:focus {
 /* Music
 ------------- */
 #music {
-    background: url(../../images/sad_keir.png) no-repeat center center fixed; /* removed fixed */
+    background: url(../../images/drift-focus-ep-cover.JPG) no-repeat center center fixed; /* removed fixed */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -245,7 +245,7 @@ fieldset[disabled] .navbar-custom .btn-link:focus {
     position:absolute;
     left:0;
     right:0;
-    top:1360px;
+    top:680px;
     height:680px; /* smaller on mobile and larger on mega screens */
 }
 
@@ -261,7 +261,7 @@ fieldset[disabled] .navbar-custom .btn-link:focus {
     position:absolute;
     left:0;
     right:0;
-    top:2040px;
+    top:1360px;
     height:680px;  /* smaller on mobile and larger on mega screens */
 }
 
@@ -290,7 +290,7 @@ fieldset[disabled] .navbar-custom .btn-link:focus {
     position:absolute;
     left:0;
     right:0;
-    top:2720px;
+    top:1360px;
     height:680px;  /* smaller on mobile and larger on mega screens */
 }
 
