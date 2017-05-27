@@ -1,12 +1,9 @@
 .center-nav {
 	display:inline-block;
-	padding:0;
-	margin:0;
 }
 
 .navbar-custom {
 	text-align:center;
-	font-weight:300;
 	background:black;
 	height:50px;
 }
@@ -34,6 +31,7 @@
 .navbar-custom .navbar-nav > li > a:focus {
   color: #D83304;
   background-color: transparent;
+	height:50px;
 }
 .navbar-custom .navbar-nav > .active > a,
 .navbar-custom .navbar-nav > .active > a:hover,
@@ -60,14 +58,14 @@
 .navbar-custom .navbar-collapse,
 .navbar-custom .navbar-form {
 	border:none;
-	
+	/*background-color:black;*/ /* dropdown menu color */
 }
 
 .navbar-custom .navbar-nav > .open > a,
 .navbar-custom .navbar-nav > .open > a:hover,
 .navbar-custom .navbar-nav > .open > a:focus {
   color: #D83304;
-  background-color:black; /* dropdown menu color */
+	
 }
 @media (max-width: 767px) {
   .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
