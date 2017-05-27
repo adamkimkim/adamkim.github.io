@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+	
+	<link rel="stylesheet" href="css/fullscreen_images.css">
+	<!-- <link rel="stylesheet" href="css/masonry_grid.css"> -->
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+	<!-- Scripts 
+	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+	integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+
+	<!--
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+	-->
+	
+	<script src="js/masonry.pkgd.js"></script>
+	<script src="js/imagesloaded.pkgd.js"></script>
+
+	<script src="js/fullscreen_images.js"></script>
+	<!-- <script src="js/masonry_grid.js"></script>-->
+</head>
+<body>
+<style>
+	* { box-sizing: border-box; }
+	
+	body { font-family: sans-serif; }
+	
+	/* ---- grid ---- */
+	
+	.grid {
+  background: #EEE;
+	max-width: 1200px;
+	}
+
+/* clearfix */
+.grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* ---- grid-item ---- */
+
+.grid-sizer,
+.grid-item {
+	width: 20%;
+}
+
+.grid-item {
+	height: 120px;
+	float: left;
+	background: #D26;
+	border: 2px solid #333;
+	border-color: hsla(0, 0%, 0%, 0.5);
+	border-radius: 5px;
+}
+
+.grid-item--width2 { width:  40%; }
+.grid-item--width3 { width:  60%; }
+
+.grid-item--height2 { height: 200px; }
+.grid-item--height3 { height: 260px; }
+.grid-item--height4 { height: 360px; }
+
+</style>
+
+<script>
+	// external js: masonry.pkgd.js
+	
+	$('.grid').masonry({
+										 itemSelector: '.grid-item',
+										 columnWidth: '.grid-sizer',
+										 percentPosition: true
+										 });
+
+</script>
+
+<div class="fullscreen bg"
+			style="background-image:url('images/side_hat_edited.jpg');"
+			data-img-width="1024"
+			data-img-height="679">
+	<div class="content-a">
+		<div class="content-b">
+		</div> <!-- endof content b -->
+	</div> <!-- endof content a -->
+</div> <!-- endof fullscreeen bg -->
+
+<!--
+<div class="grid">
+	<div class="grid-sizer"></div>
+	<div class="grid-item">
+		<img src="images/toujou_far_out.jpg" />
+	</div>
+	<div class="grid-item">
+		<img src="images/drift-focus-ep-cover.jpg" />
+	</div>
+	<div class="grid-item">
+		<img src="images/within.jpg" />
+	</div>
+	<div class="grid-item">
+		<img src="images/this_is_my_ep.png" />
+	</div>
+</div>
+-->
+<div class="grid">
+	<div class="grid-sizer"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item grid-item--width2 grid-item--height2"></div>
+	<div class="grid-item grid-item--height3"></div>
+	<div class="grid-item grid-item--height2"></div>
+	<div class="grid-item grid-item--width3"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item grid-item--height2"></div>
+	<div class="grid-item grid-item--width2 grid-item--height3"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item grid-item--height2"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item grid-item--width2 grid-item--height2"></div>
+	<div class="grid-item grid-item--width2"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item grid-item--height2"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item grid-item--height3"></div>
+	<div class="grid-item grid-item--height2"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item"></div>
+	<div class="grid-item grid-item--height2"></div>
+</div>
+
+
+
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="one-half column" style="margin-top: 25%">
+        <h4>Basic Page</h4>
+        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
