@@ -29,7 +29,8 @@ html { overflow-y: scroll; }
 .grid-item {
 	float: left;
 	/* vertical gutter */
-	/*margin: 10px;*/
+	margin-bottom:10px;
+	margin-top:20px;
 }
 
 .grid-item img {
@@ -65,7 +66,6 @@ img.fit {
 		width: 290px;
 		height: 290px;
 	}
-
 	#album-des {
 		display:none;
 	}
