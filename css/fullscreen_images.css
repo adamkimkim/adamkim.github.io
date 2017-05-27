@@ -1,6 +1,6 @@
 /* via http://www.minimit.com/demos/fullscreen-backgrounds-with-centered-content */
 
-.bg {
+.background {
 	background-repeat:no-repeat;
 	background-position:50% 50%; /* custom */
 	background-position:50% 50%\9 !important; /* ie8 graceful degradation */

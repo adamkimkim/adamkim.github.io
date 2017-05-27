@@ -21,7 +21,7 @@ fullscreenFix();
 
 function backgroundResize() {
 	var winH = $(window).height();
-	$(".bg").each(function(i){
+	$(".background").each(function(i){
 								var path = $(this);
 								// variables
 								var contW = path.width();
