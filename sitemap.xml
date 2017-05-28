@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<?xml-stylesheet type="text/xsl" href="http://http://keepitinside.com/sitemap.xsl"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>http://keepitinside.com/</loc>
+		<lastmod>2017-05-28</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>1.0</priority>
+	</url>
+
+	<url>
+    <loc>http://keepitinside.com/#music</loc>
+    <lastmod>2017-05-28</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+
+	<url>
+		<loc>http://keepitinside.com/#about</loc>
+		<lastmod>2017-05-28</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+
+	<url>
+		<loc>http://keepitinside.com/#contact</loc>
+		<lastmod>2017-05-28</lastmod>
+		<changefreq>monthly</changefreq>
+	</url>
+
+</urlset>
