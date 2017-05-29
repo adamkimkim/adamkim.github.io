@@ -30,7 +30,7 @@ html { overflow-y: scroll; }
 .grid-item {
 	float: left;
 	/* vertical gutter */
-	margin-bottom:20px auto;
+	margin:10px auto;
 }
 
 .grid-item img {
@@ -47,17 +47,10 @@ img.fit {
 	object-fit:cover;
 }
 
-#album-des {
-	padding:20px;
-}
-
 
 @media (max-width: 650px) {
 	.grid {
-		max-width:300px;
-	}
-	#album-des {
-		display:none;
+		max-width:290px;
 	}
 }
 
@@ -65,8 +58,5 @@ img.fit {
 	.grid-item {
 		width: 290px;
 		height: 290px;
-	}
-	#album-des {
-		display:none;
 	}
 }
