@@ -7,7 +7,7 @@ html { overflow-y: scroll; }
 /* ---- grid ---- */
 
 .grid {
-	margin: 0 auto;
+	margin: 5% auto;
 	max-width:640px;
 	height:100%;
 }
