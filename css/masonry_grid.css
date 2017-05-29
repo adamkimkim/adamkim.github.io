@@ -47,14 +47,15 @@ img.fit {
 	object-fit:cover;
 }
 
-
 @media (max-width: 650px) {
 	.grid {
-		max-width:290px;
+		max-width:300px;
 	}
 }
 
-@media (max-width: 350px) {
+
+@media (max-width: 450px) {
+
 	.grid-item {
 		width: 290px;
 		height: 290px;

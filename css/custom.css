@@ -93,3 +93,7 @@ a:hover {
 	margin:0;
 	background-color:black;
 }
+
+#player {
+	width:250px;
+}
