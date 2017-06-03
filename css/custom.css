@@ -2,12 +2,12 @@ body {
 	font-family: "Roboto", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
 	color:white;
 	background:#111;
-	font-weight:200;
+	font-weight:300;
 	margin:0;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 300;
+	font-weight:400;
 	margin:0;
 }
 
@@ -302,6 +302,14 @@ img.fit {
 	height: 80px; /*same height as header*/
 	margin-top: -80px; /*same height as header*/
 	visibility: hidden;
+}
+
+
+@media (max-width: 450px) {
+	.anchor {
+		height: 100px; /*same height as header*/
+		margin-top: -100px; /*same height as header*/
+	}
 }
 
 #navbar-placement {
