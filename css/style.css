@@ -179,6 +179,10 @@ a {
 		display: none; /* why won't hidden work? */
 	}
 	
+	#vstack {
+		display:none;
+	}
+	
 	.footnote {
 	 padding-top: 10px;
 	}
