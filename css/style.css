@@ -32,7 +32,6 @@ p {
 }
 
 a {
-	
 	text-decoration:none;
 	color: #333333; /* dark gray */
 }
@@ -42,7 +41,7 @@ a:hover {
 }
 
 
-.container { /* paper with white space as border */
+.container { /* paper with body as border */
 	background-image: url(images/tshirt_circle_dark_TRANSPARENT.png);
 	margin: 30px;
 }
