@@ -17,7 +17,7 @@
 
   <!-- FONT
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=EB+Garamond|Roboto:300" rel="stylesheet">
 	
 
   <!-- CSS
@@ -26,7 +26,7 @@
   <link rel="stylesheet" href="css/skeleton.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	
-	<link rel="stylesheet" href="css/custom.css">
+	<link rel="stylesheet" href="css/style.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -36,232 +36,78 @@
 </head>
 <body>
 
-	<div class="navbar" id="nav">
-		<div id="navbar-placement">
-			<a href="#home">Home</a>
-			<a href="#music">Music</a>
-			<a href="#about">About</a>
-			<a href="http://officialkeepitinside.blogspot.com/">Blog</a>
-			<a href="#contact">Contact</a>
-			<a href="javascript:void(0);" style="font-size:20px;" class="menu_icon" onclick="menu()">&#9776;</a>
-		</div>
+
+
+<div class="container" style="background-image:url('images/white_7.png')">
+
+	<div class="social-media-icons">
+		<div id="email"><a href="mailto:adamhkim54@gmail.com" alt="keepitinside email"><img src="images/iconmonster/email.svg" alt="email"></a></div>
+		
+		<div id="soundcloud"><a href="/" alt="keepitinside soundcloud"><img src="images/iconmonster/soundcloud.svg" alt="soundcloud"></a></div>
+		
+		<div id="spotify"><a href="/" alt="keepitinside spotify"><img src="images/iconmonster/spotify.svg" alt="spotify"></a></div>
+		
+		<div id="facebook"><a href="https://www.facebook.com/admakimi/" alt="keepitinside facebook"><img src="images/iconmonster/fb.svg" alt="facebook"></a></div>
+		
+		<div id="instagram"><a href="/"><img src="images/iconmonster/instagram.svg" alt="instagram"></a></div>
+		
+		<div id="linkedin"><a href="https://www.linkedin.com/in/adam-kim-75800a97" alt="Adam Kim Linkedin"><img src="images/iconmonster/linkedin.svg" alt="linkedin"></a></div>
 	</div>
-
-
-
-
-
-<div class="fullscreen background" style="background-image:url('images/side_hat_edited.jpg');" data-img-width="1024" data-img-height="679">
 	
-	<div class="content-a">
-		<div class="kii_label">
-			<div class="kii_text">
-				<h1>keepitinside</h1>
-			</div>
-			<div class="ak_text">
-				<h3>adam kim</h3>
-			</div>
-		</div>
+	<div class="box">
+		<div class="box_content_center">
+			<img id="cover-img" src="images/tshirt_circle_dark_TRANSPARENT.png" width="500px">
+	</div>
 		
-		<div class="photo_credit">
-			<p>photo by Simon Yu</p>
-		</div>
-	</div> <!-- endof content a -->
-</div> <!-- endof fullscreen bg -->
-
-
-
-<div class="fullscreen background" style="background-image:url('images/adam_hat.jpg');" data-img-width="1024" data-img-height="680">
-
-		<div class="content-a">
-			<div class="content-b">
-			<span class="anchor" id="music"></span>
+	</div> <!-- endof box -->
+	
+	
+	
+	<div class="grid">
+		<div class="grid-sizer">
+			<div class="grid-item">
+				<img src="images/ep/getup.png">
+					</div>
 			
-			<div class="grid">
-				<div class="grid-sizer"></div>
-				<div class="grid-item">
-					<img id="distant" onClick="getId(this.id)" class="fit" src="images/toujou_far_out.jpg" />
-				</div>
-				
-				<div id="distant-info" class="modal">
-				<div class="modal-content">
-					<span onClick="closeModal()" class="close-btn">&times;</span>
-					<h3>Distant</h3>
-					<p>
-						So Far by Toujou feat. keepitinside
-					</p>
-					<iframe id="player" src="https://open.spotify.com/embed?uri=spotify:track:74s3RSF3wEQZX4hql1qsWS" width="300" height="80" frameborder="0" allowtransparency="true"></iframe>
-				</div>
-				</div> <!-- endof modal -->
-				
-				
-				<div class="grid-item">
-					<img id="driftfocus" onClick="getId(this.id)" class="fit" src="images/drift-focus-ep-cover.jpg" />
-				</div>
-				
-				<div id="driftfocus-info" class="modal">
-				<div class="modal-content">
-					<span onClick="closeModal()" class="close-btn">&times;</span>
-					<h3>drift · focus</h3>
-					<ol>
-						<li>Drift</li>
-						<li>Focus</li>
-					</ol>
-				</div>
-				</div> <!-- endof modal -->
-				
-				
-				<div class="grid-item">
-					<img id="within" onClick="getId(this.id)" class="fit" src="images/within.jpg" />
-				</div>
-				
-				<div id="within-info" class="modal">
-				<div class="modal-content">
-					<span onClick="closeModal()" class="close-btn">&times;</span>
-					<h3>within.</h3>
-					<ol id="two-cols">
-						<li>It Starts</li>
-						<li>Rollen</li>
-						<li>Rxmnce</li>
-						<li>I X U</li>
-						<li>Alxne</li>
-						<li>If (You Want)</li>
-						<li>In Heaven</li>
-						<li>Lxver</li>
-						<li>Bye</li>
-						<li>This Isn't Pain</li>
-						<li>At All</li>
-					</ol>
-				</div>
-				</div> <!-- endof modal -->
-
-
-				<div class="grid-item">
-					<img id="thisismyep" onClick="getId(this.id)" class="fit" src="images/this_is_my_ep.png" />
-				</div>
-				
-				<div id="thisismyep-info" class="modal">
-				<div class="modal-content">
-					<span onClick="closeModal()" class="close-btn">&times;</span>
-					<h3>this is my EP</h3>
-					<ol>
-						<li>Georgia</li>
-						<li>Out</li>
-						<li>Luci</li>
-						<li>Thoughts</li>
-					</ol>
-				</div>
-				</div> <!-- endof modal -->
-
-				
-			</div> <!-- endof grid -->
-			</div> <!-- endof content b -->
-		</div> <!-- endof content a -->
-
-</div> <!-- endof fullscreen bg -->
-
-
-
-<div class="fullscreen background" style="background-image:linear-gradient(
-	rgba(0, 0, 0, 0.6),
-	rgba(0, 0, 0, 0.6)
-	),url('images/guitar-austin-prock.jpg" data-img-width="1600" data-img-height="1067">
+			<div class="grid-item">
+				<img src="images/ep/liv.png">
+					</div>
+			
+			<div class="grid-item">
+				<img src="images/ep/ontopofmycar.png">
+					</div>
+			
+			<div class="grid-item">
+				<img src="images/ep/safeinmybathtub.png">
+					</div>
+			
+		</div> <!-- endof grid-sizer -->
+	</div> <!-- endof grid -->
 	
-		<div class="content-a" style="padding:10%">
-		<div class="content-b">
-		<span class="anchor" id="about"></span>
-		<h1>about</h1>
-		<p>
-			Adam Kim is a producer based in San Diego.<br>
-			<a href="" alt="Adam Kim Resume">resume</a><br>
-			<a href="mailto:officialkeepitinside@gmail.com" alt="keepitinside email"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;</a>
-			<a href="https://soundcloud.com/spentpennytheband"><i class="fa fa-soundcloud" aria-hidden="true"></i>&nbsp;</a>
-			<a href="https://www.facebook.com/admakimi/" alt="Adam Kim facebook"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;</a>
-			<a href="https://www.linkedin.com/in/adam-kim-75800a97" alt="Adam Kim Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;</a>
-		</p>
-		
-			<div class="row">
-				<div class="six columns">
-					<h3 style="margin:0;">keepitinside <a href="https://soundcloud.com/keepitinside"><i class="fa fa-soundcloud" aria-hidden="true"></i></a> <a href="https://www.facebook.com/keepitinside"><i class="fa fa-facebook" aria-hidden="true"></i></a> <a href="https://play.spotify.com/artist/0Oiylv6E2eKJ2oaMUbByAz"><i class="fa fa-spotify" aria-hidden="true"></i></a></h3>
-					keepitinside is a project where the music is focused on the inner self. Using a mixture of electronic beats and live instruments, the music attempts to combine a mellow background supported by harsh instruments. keepitinside strives to convey that there are dark sides to smiling faces and, sometimes, all you need to do is listen.
-					<br>
-					Support keepitinside via venmo @adamkimkim <br><br>
-				</div>
-				
-				<div class="six columns">
-					<h3>Spent Penny <a href="https://soundcloud.com/spentpennytheband"><i class="fa fa-soundcloud" aria-hidden="true"></i></a> <a href="https://www.facebook.com/spentpennytheband"><i class="fa fa-facebook" aria-hidden="true"></i></a> </h3>
-					<p>Founded in 2015</p>
-					<h5>Current Members</h5>
-					<p>
-						Adam Kim - Vocals, Guitar, Production.<br>
-						Cuong Luong - Bass.<br>
-						Alexander Pelletier - Drums.<br>
-						Connor Schultz - Lead Guitar, Backup Vocals.<br>
-					</p>
-					<h5>Past Members</h5>
-					<p>Austin Chinn - Drums.</p>
-				</div>
-			</div> <!-- endof row -->
 
 
-			</div> <!-- endof content-b -->
-		</div> <!-- endof content a -->
-</div> <!-- endof fullscreen bg -->
+</div>
 
+<div class="footnote">
+	<p>&copy; 2015-2017 keepitinside. <a href="https://www.linkedin.com/in/ilsetse">designed by ilse tse</a> </p>
+</div>
 
-<div class="fullscreen background" style="background-image:linear-gradient(
-	rgba(0, 0, 0, 0.6),
-	rgba(0, 0, 0, 0.6)
-	),url('images/tap-cristian-guanipa.jpg')" data-img-width="1600" data-img-height="1067">
-	
-		<div class="content-a" style="padding:10%">
-			<div class="content-b">
-				<span class="anchor" id="contact"></span>
-				<h1>contact</h1>
-				<p>If you'd like to collaborate with keepitinside, or you're curious about our music, please don't hesitate to get in touch.</p>
-				
-				<a href="mailto:adamhkim54@gmail.com" alt="keepitinside email"><i class="fa fa-envelope" aria-hidden="true"></i>&nbsp;</a>
-				<a href="https://soundcloud.com/spentpennytheband"><i class="fa fa-soundcloud" aria-hidden="true"></i>&nbsp;</a>
-				<a href="https://www.facebook.com/admakimi/" alt="Adam Kim facebook"><i class="fa fa-facebook" aria-hidden="true"></i>&nbsp;</a>
-				<a href="https://www.linkedin.com/in/adam-kim-75800a97" alt="Adam Kim Linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;</a>
-				<a href="#" alt="Adam Kim Resume"><i class="fa fa-file-text" aria-hidden="true"></i>&nbsp;</a>
-				
-			</div> <!-- endof content-c -->
-		</div> <!-- endof content a -->
-</div> <!-- endof fullscreen bg -->
+<!-- End Document -->
+
+<!-- Javascript -->
+<script
+	src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	crossorigin="anonymous"></script>
 
 
 
-<p id="copyright">
-&#169; 2015 - 2017 keepitinside. <a href="https://www.linkedin.com/in/ilsetse" style="text-transform:none">website developed by ilsetse</a>
-</p>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+<script src="custom.js"></script>
 
+</body>
 
-	<!-- Scripts
-	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
-	<script
-		src="https://code.jquery.com/jquery-3.2.1.js"
-		integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-		crossorigin="anonymous"></script>
-
-	<script src="js/fullscreen_images.js"></script>
-	<script src="js/navbar.js"></script>
-
-	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
-	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
-	<script src="js/masonry_grid.js"></script>
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-	 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-	 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	 <![endif]-->
-
-
-	<script src="js/modal.js"></script>
-	
-	
 	<!-- Google Analytics
 	–––––––––––––––––––––––––––––––––––––––––––––––––– -->
 	<script>

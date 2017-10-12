@@ -1,0 +1,207 @@
+* {
+	box-sizing: border-box; /* tells browser width & height sizing properties should include content, padding, and border (not margin).  */
+}
+
+/*
+ NOTE
+ html is set to 62.5% so that all the REM measurements throughout Skeleton
+ are based on 10px sizing. So basically 1.5rem = 15px :) 
+ */
+html {
+	font-size: 62.5%;
+	overflow-y: scroll; /* force scrollbar */
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'EB Garamond', serif;
+	font-weight: 100;
+	margin:0;
+}
+
+body {
+	background: #333;
+  font-weight: 100;
+  font-family: 'EB Garamond', serif;
+  color: #222;
+	font-size: 1.3em; /* currently ems cause chrome bug misinterpreting rems on body element */
+}
+
+p {
+	margin-top: 0;
+	font-family: 'EB Garamond', serif;
+}
+
+a {
+	
+	text-decoration:none;
+	color: #333333; /* dark gray */
+}
+
+a:hover {
+	color: #7297b2; /* light blue */
+}
+
+
+.container { /* paper with white space as border */
+	background-image: url(images/tshirt_circle_dark_TRANSPARENT.png);
+	margin: 30px;
+}
+
+/* landing */
+.social-media-icons {
+	position: fixed;
+	left: 9px;
+	top: 39%;
+}
+
+.social-media-icons img {
+	width:20px;
+}
+
+
+.box {
+	width: 90%;
+	height: 650px;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	/*background: #FCF8F8;*/ /* light pink UPDATE removed -color */
+	position: relative; /* doesn't work with relative, but works with fixed too 
+													UPDATE: use relative to prevent overlap. need specific height. */
+	margin: 20px auto;
+	
+	/* todo: how to fix margin width? */
+}
+
+a {
+	font-family: 'EB Garamond', serif;
+}
+
+.box_content_center {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	text-align: center; /* center navbar text */
+}
+
+
+
+/* 
+	GRID
+*/
+.grid {
+	margin: 20px auto;
+}
+
+/* clear fix */
+.grid:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*
+ grid-item
+*/
+.grid-item img {
+	width: 250px;
+	height: 250px;
+	float: left;
+	padding: 10px; /* grid item frame / gutter */
+	background: #cba2a2; /* grid item frame color*/
+	margin: 10px;
+}
+
+
+/* footer */
+.footer {
+	background: #333;
+	min-height: 150px; /* fixes mobile padding */
+	padding: 20px 30px;
+	color: white;
+}
+
+.footer a {
+	color: white;
+}
+
+/* 3 columns via skeleton */
+.row:after {
+	content: "";
+	display: table;
+	clear: both; }
+
+.column,
+.columns {
+	width: 100%;
+	float: left;
+	box-sizing: border-box; }
+
+
+
+
+/* footnote */
+.footnote {
+	 width: 100%;
+	 display: block;
+	 text-align: center;
+	 
+}
+
+.footnote p, a {
+	display: inline-block;
+	color: #ffffff;
+}
+
+
+/* media items */
+@media (min-width: 550px) { /* todo max width */
+	.column,
+	.columns {
+		margin-left: 4%; }
+	.column:first-child,
+	.columns:first-child {
+		margin-left: 0; }
+	
+	.one-third.column { width: 30.6666666667%; }
+	
+	.offset-by-one-third.column,
+	.offset-by-one-third.columns { margin-left: 34.6666666667%; }
+
+}
+
+@media (max-width: 450px) {
+	.container {
+		margin: 5px;
+	}
+	
+	.social-media-icons {
+		display: none; /* why won't hidden work? */
+	}
+	
+	.footnote {
+	 padding-top: 10px;
+	}
+}
+
+@media (max-width: 320px) { /* todo. this is hard coded */
+	.grid {
+		margin:20px;
+			/* why does auto make left margin jump */
+	}
+	
+	.grid-item img {
+		width: 250px;
+		height: 250px;
+		padding: 10px;
+		margin: 10px auto;
+	}
+	
+	#cover-img {
+		width: 250px;
+	}
+}
+

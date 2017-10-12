@@ -1,0 +1,20 @@
+<svg width="300" height="300" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>Group</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(2375 222)">
+<g id="Group">
+<g id="Ellipse 5">
+<use xlink:href="#path0_fill" transform="translate(-2375 -222)" fill="#CBA2A2"/>
+</g>
+<g id="iconmonstr-linkedin-1">
+<g id="Vector">
+<use xlink:href="#path1_fill" transform="translate(-2305 -149)" fill="#FFFFFF"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 300 150C 300 232.843 232.843 300 150 300C 67.1573 300 0 232.843 0 150C 0 67.1573 67.1573 0 150 0C 232.843 0 300 67.1573 300 150Z"/>
+<path id="path1_fill" d="M 33.2 16.6667C 33.2 25.8733 25.8 33.3333 16.6667 33.3333C 7.53333 33.3333 0.133333 25.8733 0.133333 16.6667C 0.133333 7.46667 7.53333 0 16.6667 0C 25.8 0 33.2 7.46667 33.2 16.6667ZM 33.3333 46.6667L 0 46.6667L 0 153.333L 33.3333 153.333L 33.3333 46.6667ZM 86.5467 46.6667L 53.4267 46.6667L 53.4267 153.333L 86.5533 153.333L 86.5533 97.34C 86.5533 66.2067 126.747 63.66 126.747 97.34L 126.747 153.333L 160 153.333L 160 85.7933C 160 33.26 100.52 35.1733 86.5467 61.0333L 86.5467 46.6667Z"/>
+</defs>
+</svg>
