@@ -171,6 +171,14 @@ a {
 	.offset-by-one-third.column,
 	.offset-by-one-third.columns { margin-left: 34.6666666667%; }
 
+
+
+}
+
+@media (max-width: 650px) {
+	#cover-img {
+		width: 300px;
+	}
 }
 
 @media (max-width: 450px) {
@@ -185,6 +193,7 @@ a {
 	.footnote {
 	 padding-top: 10px;
 	}
+	
 }
 
 @media (max-width: 320px) { /* todo. this is hard coded */
@@ -203,5 +212,6 @@ a {
 	#cover-img {
 		width: 250px;
 	}
+
 }
 
