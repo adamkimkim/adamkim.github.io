@@ -46,14 +46,19 @@ a:hover {
 	margin: 30px;
 }
 
-/* landing */
 .social-media-icons {
 	position: fixed;
 	left: 9px;
 	top: 39%;
 }
 
-.social-media-icons img {
+nav {
+	padding: 20px;
+	display: none;
+}
+
+.social-media-icons img,
+nav img {
 	width:20px;
 }
 
@@ -103,11 +108,9 @@ a {
 	float: left;
 	padding: 10px; /* grid item frame / gutter */
 	background: #cba2a2; /* grid item frame color*/
-	margin: 10px 10px 30px 10px;
+	margin: 10px;
 }
 
-
-/* footer */
 .footer {
 	background: #333;
 	min-height: 150px; /* fixes mobile padding */
@@ -132,7 +135,6 @@ a {
 	box-sizing: border-box; }
 
 
-/* footnote */
 .footnote {
 	 width: 100%;
 	 display: block;
@@ -147,6 +149,17 @@ a {
 
 
 /* media items */
+@media (max-width: 650px) {
+	#cover-img {
+		width: 300px;
+	}
+	
+	.box {
+		height: 500px;
+	}
+	
+}
+
 @media (min-width: 550px) { /* todo max width */
 	.column,
 	.columns {
@@ -159,15 +172,8 @@ a {
 	
 	.offset-by-one-third.column,
 	.offset-by-one-third.columns { margin-left: 34.6666666667%; }
-
-
-
-}
-
-@media (max-width: 650px) {
-	#cover-img {
-		width: 300px;
-	}
+	
+	
 }
 
 @media (max-width: 450px) {
@@ -175,12 +181,14 @@ a {
 		margin: 5px;
 	}
 	
+	.box {height: 450px;}
+	
 	.social-media-icons {
 		display: none; /* why won't hidden work? */
 	}
 	
-	#vstack {
-		display:none;
+	nav {
+		display:block;
 	}
 	
 	.footnote {
@@ -190,9 +198,7 @@ a {
 }
 
 @media (max-width: 320px) { /* todo. this is hard coded */
-	#cover-img {
-		width: 250px;
-	}
-
+	#cover-img {width: 250px;}
+	.box {height: 400px;}
 }
 
