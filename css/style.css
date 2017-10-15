@@ -63,6 +63,10 @@ nav img {
 }
 
 
+a {
+	font-family: 'EB Garamond', serif;
+}
+
 .box {
 	width: 90%;
 	height: 650px;
@@ -78,9 +82,6 @@ nav img {
 	/* todo: how to fix margin width? */
 }
 
-a {
-	font-family: 'EB Garamond', serif;
-}
 
 .box_content_center {
 	position: relative;
