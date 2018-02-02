@@ -19,11 +19,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-	background: #333;
+  background: #f5f5f5;
   font-weight: 100;
   font-family: 'EB Garamond', serif;
   color: #222;
-	font-size: 1.3em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-size: 1.3em; /* currently ems cause chrome bug misinterpreting rems on body element */
 }
 
 p {
@@ -108,7 +108,7 @@ a {
 	height: 250px;
 	float: left;
 	padding: 10px; /* grid item frame / gutter */
-	background: #cba2a2; /* grid item frame color*/
+	background: #bbb; /* grid item frame color*/
 	margin: 10px;
 }
 
@@ -145,7 +145,7 @@ a {
 
 .footnote p, a {
 	display: inline-block;
-	color: #ffffff;
+	color: #333;
 }
 
 
