@@ -1,205 +1,105 @@
-* {
-	box-sizing: border-box; /* tells browser width & height sizing properties should include content, padding, and border (not margin).  */
-}
-
-/*
- NOTE
- html is set to 62.5% so that all the REM measurements throughout Skeleton
- are based on 10px sizing. So basically 1.5rem = 15px :) 
- */
-html {
-	font-size: 62.5%;
-	overflow-y: scroll; /* force scrollbar */
-}
-
-h1, h2, h3, h4, h5, h6 {
-	font-family: 'EB Garamond', serif;
-	font-weight: 100;
-	margin:0;
+/* Pen-specific styles */
+html, body, section {
+  height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  background: #f5f5f5;
-  font-weight: 100;
-  font-family: 'EB Garamond', serif;
-  color: #222;
-  font-size: 1.3em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  color: #000;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.25rem;
+  line-height: 150%;
+  text-align: center;
 }
 
-p {
-	margin-top: 0;
-	font-family: 'EB Garamond', serif;
+h1 {
+  font-size: 60px;
+  font-variant: small-caps;
+  margin: -4rem 0 0.75rem 0;
+  letter-spacing: 4px;
 }
 
-a {
-	text-decoration:none;
-	color: #333333; /* dark gray */
+/* Pattern styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-a:hover {
-	color: #7297b2; /* light blue */
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-
-.container { /* paper with body as border */
-	background-image: url(images/tshirt_circle_dark_TRANSPARENT.png);
-	margin: 30px;
+.left-half {
+  flex: 50%;
+  padding: 0;
 }
 
-.social-media-icons {
-	position: fixed;
-	left: 9px;
-	top: 39%;
+.right-half {
+  flex: 50%;
+  padding: 0;
 }
 
-nav {
-	padding: 20px;
-	display: none;
-}
-
-.social-media-icons img,
-nav img {
-	width:20px;
-}
-
-
-a {
-	font-family: 'EB Garamond', serif;
-}
-
-.box {
-	width: 90%;
-	height: 650px;
-	left:0;
-	top:0;
-	right:0;
-	bottom:0;
-	/*background: #FCF8F8;*/ /* light pink UPDATE removed -color */
-	position: relative; /* doesn't work with relative, but works with fixed too 
-													UPDATE: use relative to prevent overlap. need specific height. */
-	margin: 20px auto;
-	
-	/* todo: how to fix margin width? */
-}
+figure {
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../images/main.jpg);
+    width: 100%;
+    height: 100%;
+  }
 
 
-.box_content_center {
-	position: relative;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	text-align: center; /* center navbar text */
-}
+#social img {
+      width: 20px;
+      padding: 5px;
+  }
 
-.grid {
-	margin:0 auto;
-}
+ nav {
+     margin-top: 10px;
+ }
 
-/* clear fix */
-.grid:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
-.grid-item img {
-	width: 250px;
-	height: 250px;
-	float: left;
-	padding: 10px; /* grid item frame / gutter */
-	background: #bbb; /* grid item frame color*/
-	margin: 10px;
-}
-
-.footer {
-	background: #333;
-	min-height: 150px; /* fixes mobile padding */
-	padding: 20px 30px;
-	color: white;
-}
-
-.footer a {
-	color: white;
-}
-
-/* 3 columns via skeleton */
-.row:after {
-	content: "";
-	display: table;
-	clear: both; }
-
-.column,
-.columns {
-	width: 100%;
-	float: left;
-	box-sizing: border-box; }
+  /* Media Queries
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  /*
+  Note: The best way to structure the use of media queries is to create the queries
+  near the relevant code. For example, if you wanted to change the styles for buttons
+  on small devices, paste the mobile query code up in the buttons section and style it
+  there.
+  */
 
 
-.footnote {
-	 width: 100%;
-	 display: block;
-	 text-align: center;
-	 
-}
+  /* Larger than mobile */
+  @media (max-width: 550px) {
+      .container {
+          flex-direction: column;
+      }
 
-.footnote p, a {
-	display: inline-block;
-	color: #333;
-}
+      h1 {
+          font-size: 40px;
+      }
 
+      #social img {
+            width: 15px;
+            padding: 2px;
+        }
 
-/* media items */
-@media (max-width: 650px) {
-	#cover-img {
-		width: 300px;
-	}
-	
-	.box {
-		height: 500px;
-	}
-	
-}
+        nav {
+            margin-top: 5px;
+            float: left;
+        }
+  }
 
-@media (min-width: 550px) { /* todo max width */
-	.column,
-	.columns {
-		margin-left: 4%; }
-	.column:first-child,
-	.columns:first-child {
-		margin-left: 0; }
-	
-	.one-third.column { width: 30.6666666667%; }
-	
-	.offset-by-one-third.column,
-	.offset-by-one-third.columns { margin-left: 34.6666666667%; }
-	
-	
-}
+  /* Larger than phablet (also point when grid becomes active) */
+  @media (min-width: 550px) {}
 
-@media (max-width: 450px) {
-	.container {
-		margin: 5px;
-	}
-	
-	.box {height: 450px;}
-	
-	.social-media-icons {
-		display: none; /* why won't hidden work? */
-	}
-	
-	nav {
-		display:block;
-	}
-	
-	.footnote {
-	 padding-top: 10px;
-	}
+  /* Larger than tablet */
+  @media (min-width: 750px) {}
 
-}
+  /* Larger than desktop */
+  @media (min-width: 1000px) {}
 
-@media (max-width: 320px) { /* todo. this is hard coded */
-	#cover-img {width: 250px;}
-	.box {height: 400px;}
-}
-
+  /* Larger than Desktop HD */
+  @media (min-width: 1200px) {}
